@@ -6,6 +6,10 @@ import class4 from '@/components/class4'
 import class5 from '@/components/class5'
 import class6 from '@/components/class6'
 import class7 from '@/components/class7'
+import class8 from '@/components/class8'
+import class9 from '@/components/class9'
+import class10 from '@/components/class10'
+import test from '@/components/test'
 
 Vue.use(Router)
 
@@ -40,6 +44,26 @@ export default new Router({
       path: '/class7',
       name: 'class7',
       component: class7
+    },
+    {
+      path: '/class8',
+      name: 'class8',
+      component: class8
+    },
+    {
+      path: '/class9',
+      name: 'class9',
+      component: class9
+    },
+    {
+      path: '/class10',
+      name: 'class10',
+      component: class10
+    },
+    {
+      path: '/test',
+      name: 'test',
+      component: test
     }
   ]
 })
