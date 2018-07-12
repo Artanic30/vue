@@ -51,10 +51,10 @@ export default {
       console.log(this.list)
     },
     add2 (e) {
-      if ( e.keyCode === 13) {
+      if (e.keyCode===13) {
         this.list.push({
           title: this.todo,
-        checked: false
+          checked: false
         })
         this.todo = ''
         store.set('list', this.list)

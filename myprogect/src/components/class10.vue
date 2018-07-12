@@ -9,18 +9,16 @@
 </template>
 
 <script>
-  import test from './test.vue'
+import test from './test.vue'
   import test2 from './test2.vue'
-    export default {
-        data () {
-          return {
-          }
-        },
-      components:{
-          'v-test':test,
-        'v-header':test2
-      }
-    }
+export default {   data () {
+          return {}
+  },
+  components: {
+    'v-test':test,
+    'v-header':test2
+  }
+}
 </script>
 
 <style scoped>

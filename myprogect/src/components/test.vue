@@ -6,17 +6,17 @@
 </template>
 
 <script>
-  import test2 from './test2'
-    export default {
-        data () {
-          return {
-            msg: '组件一号'
-          }
-        },
-      components: {
-          'v-header': test2
-      }
+import test2 from './test2'
+export default {
+  data () {
+    return {
+      msg: '组件一号'
     }
+  },
+  components: {
+    'v-header': test2
+  }
+}
 </script>
 
 <style  scoped>     /*scoped 作用于局部*/
