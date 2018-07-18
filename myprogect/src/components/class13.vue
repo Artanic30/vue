@@ -12,6 +12,7 @@
 </template>
 
 <script>
+  import Axios from 'axios'
 export default {
   data () {
     return {
@@ -22,13 +23,13 @@ export default {
   methods: {
     getdata () {
       var api='https://www.apiopen.top/novelApi';
-      this.$http.get(api).then((response)=>{
+      Axios.get(api).then((response)=>{
         console.log(response)
-        this.list = response.body.data   /* (.body.data) depend on particular situation
-                                          which is from the result of (console.log)*/
-      },function (err){
-        console.log(err)
-      })
+        this.list=response.data.data
+      }).catch(error)
+      {
+        console.log(error)
+      }
     },
     test () {
       if(this.list === null) {

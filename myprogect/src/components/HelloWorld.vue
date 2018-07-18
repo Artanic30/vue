@@ -45,6 +45,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   /*  css zhushi */
+  /* css grid 布局 learned from http://cssgridgarden.com/*/
   a {
     color: antiquewhite;
     length: 100px;
@@ -52,33 +53,39 @@ export default {
   }
   .hello {
     display: grid;
-    grid-template-rows: repeat(3, 33.3%);
-    grid-template-columns: repeat(2, 50%) ;
-    grid-auto-rows: min-content;
+    grid-template:repeat(3, 1fr) / repeat(5, 1fr);/* rows/columns*/
+    grid-gap:20px;
   }
   .grid-area-zero {
-    grid-row: 1;
-    grid-column: 1 / span 2;
+    grid-area: 1/3/2/4; /*  grid-area:grid-row-start, grid-column-start, grid-row-end, followed by grid-column-end*/
     background:blueviolet;
+    outline: 3px solid black;
   }
   .grid-area-a {
-    grid-row: 2;
-    grid-column: 1;
+    grid-row: 2/3;
+    grid-column: 2/3;
     background:darkred;
+    outline: 3px solid black;
   }
   .grid-area-b {
-    grid-row: 3;
-    grid-column: 2;
+    grid-row: 3/4;
+    grid-column: 2/3;
     background: darkseagreen;
+    outline: 3px solid black;
   }
   .grid-area-c {
-      grid-row: 2;
-      grid-column: 2;
+      grid-row: 2/3;
+      grid-column: 4/5;
       background:hotpink;
+    outline: 3px solid black;
     }
   .grid-area-d {
-    grid-row: 3;
-    grid-column: 1;
+    grid-row: 3/4;
+    grid-column: 4/5;
     background:darkolivegreen;
+    outline: 3px solid;
+  }
+  button {
+    background:lightblue;
   }
 </style>

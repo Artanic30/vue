@@ -16,6 +16,6 @@ export default {
 
 <style  scoped>     /*scoped 作用于局部*/
 h2{
-  color:darkgrey;
+  color:lightcoral;
 }
 </style>
