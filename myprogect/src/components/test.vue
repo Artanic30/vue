@@ -8,6 +8,22 @@
       <button @click="run('student')">父组件方法</button>
       <button @click="getparent">获取父组件值</button>
       <button @click="getparent2">获取父组件的方法与值</button>
+      <br>
+      <hr>
+       <h2>第一种传值方式</h2>
+       <ul>
+         <li v-for="(a, key) in list">
+           <router-link to="/detail2？aid=123">{{key}}---{{a}}</router-link> <!-- :to绑定动态数据 -->
+         </li>
+       </ul>
+      <br>
+      <hr>
+      <h2>第二种传值方式</h2>
+       <ul>
+         <li v-for="(a, key) in list">
+           <router-link :to="'/detail2?id='+key">{{key}}---{{a}}</router-link> <!-- :to绑定动态数据 -->
+         </li>
+       </ul>
     </div>
 </template>
 
@@ -16,7 +32,8 @@ import test2 from './test2'
 export default {
   data () {
     return {
-      msg: '组件一号'
+      msg: '组件一号',
+      list: ['first', 'second', 'third']
     }
   },
   components: {

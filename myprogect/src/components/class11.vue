@@ -40,7 +40,7 @@ export default {
     console.log('数据跟新之后')
   },
   mounted () {
-    console.log('数据运算之后')
+    console.log('组件渲染完成后触发')
   },
   beforeDestroy () {
     console.log('数据摧毁之前')

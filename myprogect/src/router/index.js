@@ -16,6 +16,10 @@ import class13 from '@/components/class13'
 import class14 from '@/components/class14'
 import class15 from '@/components/class15'
 import class16 from '@/components/class16'
+import class17 from '@/components/class17'
+import class18 from '@/components/class18'
+import detail from '@/components/detail'
+import detail2 from '@/components/detail2'
 
 Vue.use(Router)
 
@@ -25,6 +29,11 @@ export default new Router({
       path: '/',
       name: 'HelloWorld',
       component: HelloWorld
+    },
+    {
+      path: '*',
+      name: 'HelloWorld',
+      component: HelloWorld       // 无匹配地址默认跳转//
     },
     {
       path: '/class3',
@@ -100,6 +109,41 @@ export default new Router({
       path: '/class16',
       name: 'class16',
       component: class16
+    },
+      {
+      path: '/class17',
+      name: 'class17',
+      component: class17
+    },
+     {
+      path: '/class18',
+      name: 'class18',
+      component: class18
+    },
+   // {
+     // path: '/class18/:id',
+      //name: 'class18dynamic',
+     // component: class18
+  //  },//
+    {
+      path: '/detail',
+      name: 'detail',
+      component: detail
+    },
+    {
+      path: '/detail/:aid',
+      name: 'detaildynamic',
+      component: detail
+    },
+    {
+      path: '/detail2',
+      name: 'detail2',
+      component: detail2
+    },
+    {
+      path: '/detail2/:aid',
+      name: 'detail2dynamic',
+      component: detail2
     }
   ]
 })

@@ -6,6 +6,7 @@
     </div>
     <br>
     <div class="grid-area-a">
+    <!--  <router-link to="./class3">class3 </router-link>   同样效果 -->
     <a href="http://localhost:8080/#/class3">class3</a><br>
     <a href="http://localhost:8080/#/class4">class4</a><br>
     <a href="http://localhost:8080/#/class5">class5</a><br>

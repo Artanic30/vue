@@ -1,7 +1,7 @@
 <template>
     <div class="class10">
       <v-header></v-header>
-      <h2>组件化</h2>
+      <h2>组件化(引入实验)</h2>
       <br>
       <hr>
      <v-test></v-test>
@@ -11,7 +11,8 @@
 <script>
 import test from './test.vue'
   import test2 from './test2.vue'
-export default {   data () {
+export default {
+  data () {
           return {}
   },
   components: {
